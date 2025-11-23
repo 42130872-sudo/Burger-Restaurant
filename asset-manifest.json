@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.87c88cea.css",
+    "main.js": "/static/js/main.12a900ba.js",
+    "static/js/453.f4bc5f6a.chunk.js": "/static/js/453.f4bc5f6a.chunk.js",
+    "static/media/BlueCheese.jpg": "/static/media/BlueCheese.0c12a714a17750cd8480.jpg",
+    "static/media/Blogo.png": "/static/media/Blogo.98b0b682fde252697a48.png",
+    "static/media/backMenu1.webp": "/static/media/backMenu1.34791cb34334b9a2c286.webp",
+    "static/media/classicCheese.jpg": "/static/media/classicCheese.e56db45c8af9b057c080.jpg",
+    "static/media/Sparkling.jpg": "/static/media/Sparkling.bff618fdd5789b1cc9af.jpg",
+    "static/media/chef_sarah.png": "/static/media/chef_sarah.40f9a21705d6fde3e7f4.png",
+    "static/media/MushroomSwiss.jpg": "/static/media/MushroomSwiss.3f7ab56b94afd07f0ad7.jpg",
+    "static/media/restaurant_view.jpg": "/static/media/restaurant_view.7640dd43ae3b595de3d3.jpg",
+    "static/media/veggieBurger.webp": "/static/media/veggieBurger.e95f09f13413470bb39f.webp",
+    "static/media/Truffle.webp": "/static/media/Truffle.50c9826b8f0f76b8b510.webp",
+    "static/media/bbqBacon.avif": "/static/media/bbqBacon.c0bbe7c0b97acd8ebf0e.avif",
+    "static/media/chef_john.jpeg": "/static/media/chef_john.ed3db3bf532f144ca733.jpeg",
+    "static/media/Pepsi1.jpg": "/static/media/Pepsi1.4835bb89e2602966bf03.jpg",
+    "static/media/contactimage.avif": "/static/media/contactimage.64fb35b91282a5494686.avif",
+    "static/media/Orange.jpg": "/static/media/Orange.4364ff800ed34466cab1.jpg",
+    "static/media/deliveryIcon.jpg": "/static/media/deliveryIcon.a94f120b265634f49e51.jpg",
+    "static/media/Cola1.webp": "/static/media/Cola1.20ff90e22252b422ac87.webp",
+    "static/media/chef_jermy.jpg": "/static/media/chef_jermy.47b433296d0d955d1ac7.jpg",
+    "static/media/Milkshake.jpg": "/static/media/Milkshake.820e73406574059fbe96.jpg",
+    "static/media/burgerIcon.avif": "/static/media/burgerIcon.9ef0ad42a66a102d1f93.avif",
+    "static/media/homeimage.avif": "/static/media/homeimage.9ef0ad42a66a102d1f93.avif",
+    "static/media/newsletter_graphic.jpg": "/static/media/newsletter_graphic.fb1908d1866d43fe48b1.jpg",
+    "static/media/Wine.jpg": "/static/media/Wine.18b38b18116baec4c4d6.jpg",
+    "static/media/DoubleSmash.jpg": "/static/media/DoubleSmash.c308761f8ff49720fc0a.jpg",
+    "static/media/IcedCaramel.jpg": "/static/media/IcedCaramel.59aa3e61113214846419.jpg",
+    "static/media/paymentIcon.avif": "/static/media/paymentIcon.bf112c4005fa06ed39ee.avif",
+    "static/media/chef_raiyan.jpg": "/static/media/chef_raiyan.7b999507ed0f0975132f.jpg",
+    "static/media/FreshLemon.avif": "/static/media/FreshLemon.356b8f3a6e75e6e3b86a.avif",
+    "index.html": "/index.html",
+    "main.87c88cea.css.map": "/static/css/main.87c88cea.css.map",
+    "main.12a900ba.js.map": "/static/js/main.12a900ba.js.map",
+    "453.f4bc5f6a.chunk.js.map": "/static/js/453.f4bc5f6a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87c88cea.css",
+    "static/js/main.12a900ba.js"
+  ]
+}
