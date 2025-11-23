@@ -1,0 +1,365 @@
+/* --- Global Variables and Base Styles --- */
+:root {
+    --primary-color: #cc0000; /* Deep Red */
+    --secondary-bg: #fef5f5; /* Light Pink/Red Background */
+    --text-dark: #333;
+    --text-gray: #777;
+}
+
+.about-us-page {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8f8;
+    padding: 0 0 50px 0;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: var(--text-dark);
+    font-style: italic;
+}
+
+/* --- 1. Restaurant Intro Section --- */
+.restaurant-intro {
+    padding-top: 50px;
+}
+
+.intro-title {
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.intro-title .highlight {
+    color: var(--primary-color);
+}
+
+.intro-description {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    color: var(--text-gray);
+    font-size: 1.1rem;
+}
+
+.video-placeholder {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.video-placeholder img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: rgba(204, 0, 0, 0.8);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.play-button:hover {
+    background-color: var(--primary-color);
+}
+
+/* --- 2. Features Section (What We Do) --- */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    padding: 30px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    /* For the Emoji to look centered and sized correctly */
+    font-size: 2rem; 
+}
+
+.feature-card h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--text-dark);
+}
+
+.feature-card p {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+/* --- 3. Master Chef Section --- */
+.master-chef-section {
+    padding: 60px 0;
+}
+
+.chef-background-wrapper {
+    background-color: var(--secondary-bg);
+    border-radius: 20px;
+    position: relative;
+    padding: 40px 20px;
+}
+
+.chef-slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px; 
+    overflow-x: auto; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.chef-slider::-webkit-scrollbar {
+    display: none; 
+}
+
+.arrow {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-arrow {
+    left: 40px;
+}
+
+.right-arrow {
+    right: 40px;
+}
+
+.chef-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 250px; 
+    min-width: 250px; 
+    text-align: left;
+}
+
+.chef-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.chef-info {
+    padding: 15px;
+    position: relative;
+}
+
+.chef-info h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 2px;
+}
+
+.chef-role {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-size: 1rem; /* Size for the Emoji/icon */
+}
+
+.social-links:hover {
+    transform: scale(1.1);
+}
+
+/* --- 4. Newsletter Section --- */
+.newsletter-section {
+    margin-top: 60px;
+}
+
+.newsletter-content {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.newsletter-image {
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.newsletter-form-container {
+    text-align: left;
+    max-width: 500px;
+}
+
+.newsletter-form-container h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.newsletter-form-container p {
+    color: var(--text-gray);
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-group input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-right: none;
+    outline: none;
+}
+
+.subscribe-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #a30000;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 1024px) {
+    .left-arrow, .right-arrow {
+        display: none; /* Hide arrows, rely on horizontal scrolling */
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .chef-slider {
+        justify-content: flex-start; /* Ensure cards start from the left */
+        overflow-x: scroll;
+    }
+
+    .newsletter-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter-image {
+        max-width: 60%;
+    }
+
+    .newsletter-form-container {
+        text-align: center;
+    }
+    
+    .input-group {
+        flex-direction: column;
+    }
+    
+    .input-group input {
+        border-right: 1px solid #ddd;
+        border-bottom: none;
+    }
+}

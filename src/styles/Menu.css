@@ -1,0 +1,210 @@
+.menu {
+  padding: 2rem;
+  text-align: center;
+   background-color: #faf9f9; 
+  padding: 50px 20px;
+   background-image:url('../assets/backMenu1.webp');
+}
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center; 
+  align-items: stretch;
+  
+}
+
+.menu-item {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+   background-color: #e1400a; 
+  transition: transform 0.3s ease-in-out;
+   display: flex; 
+  flex-direction: column;
+  height: 400px; 
+  background-color: #df4706;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-bottom: 15px; 
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+.menu h2 {
+  font-size: 3em;
+  font-weight: 700; 
+  color: #fafbf9; 
+  margin-bottom: 40px; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+.menu-item h3 {
+  color: #333;
+}
+.menu-item p {
+  color: #135f04; 
+  font-weight: bold;
+}
+.menu-item img {
+ 
+  height: 70%; 
+  width: 100%; 
+
+  
+  object-fit: cover;
+  
+ 
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+
+
+
+
+
+
+
+/* --- Global Variables and Base Reset --- */
+:root {
+    --primary-orange: #0dc81a; /* Header/Accent Color - Fiery Orange */
+    --secondary-red: #f7f4f4; /* Darker Red/Accent */
+    --background-light: #e85906; /* Light Gray Background */
+    --card-background: #ee6008; /* White Card Background */
+    --text-dark: #1f2937; /* Main Text Color */
+    --text-light: #079024; /* Secondary Text Color */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --hover-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.menu-page-container {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-light);
+    min-height: 100vh;
+}
+
+/* --- Menu Component Layout (Wrapper) --- */
+.menu {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto;
+    padding: 20px 10px 50px 10px;
+    text-align: center;
+}
+
+/* --- Section Title Styling --- */
+.menu h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--secondary-red);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 40px 0 25px 0;
+    border-bottom: 3px solid var(--primary-orange);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* For spacing the Drinks title */
+.menu h2:nth-of-type(2) {
+    margin-top: 80px; /* Add extra space above the 'Our Drinks' title */
+}
+
+/* --- Menu Grid Layout (Burgers and Drinks) --- */
+.menu-grid {
+    display: grid;
+    /* Responsive Grid: 2 columns on small screens, 3 on medium, 4 on large */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 0 10px;
+}
+
+/* --- Individual Menu Item Card --- */
+.menu-item {
+    background-color: var(--card-background);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    overflow: hidden;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--primary-orange);
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 8px 20px var(--hover-shadow);
+}
+
+/* --- Image Styling --- */
+.menu-item img {
+    width: 100%;
+    max-height: 180px; /* Limit image height */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover img {
+    transform: scale(1.03); /* Slight zoom on hover */
+}
+
+/* --- Text Styling --- */
+.menu-item h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 5px 0;
+    padding: 0 5px;
+}
+
+.menu-item p {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary-orange); /* Highlight price */
+    margin: 5px 0 0 0;
+}
+
+/* --- Mobile Adjustments (Smallest Screens) --- */
+@media (max-width: 480px) {
+    .menu h2 {
+        font-size: 2rem;
+        margin: 30px 0 20px 0;
+    }
+    .menu-grid {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+        gap: 20px;
+    }
+    .menu-item img {
+        max-height: 200px;
+    }
+}
+
+/* --- Tablet Adjustments --- */
+@media (min-width: 768px) {
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on tablets */
+    }
+}
+
+/* --- Desktop Adjustments --- */
+@media (min-width: 1024px) {
+    .menu-grid {
+        grid-template-columns: repeat(4, 1fr); /* Four columns on desktops */
+    }
+}

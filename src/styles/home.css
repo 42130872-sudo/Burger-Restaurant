@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=1600&q=80
+
+/* Hero Section */
+.hero {
+   background-image: url('../assets/homeimage.avif'); /* Adjust path as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Optional: makes the hero section full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+ 
+  color: rgb(243, 244, 248);
+  padding: 6rem 2rem;
+  text-align: center;
+ 
+}
+.hero-content h1 {
+  font-size: 7rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #ffd700;
+  color: #004080;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e6c200;
+}
+
+/* About Section */
+.about, .contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: white;
+}
+
+.about h2, .contact h2 {
+  margin-bottom: 1rem;
+  color: #004080;
+}
+
+/* Departments Section */
+.departments {
+  padding: 4rem 2rem;
+  background-color: #e9f0fa;
+  text-align: center;
+}
+
+.departments h2 {
+  margin-bottom: 2rem;
+  color: #004080;
+}
+
+.dept-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+  
+  
+    gap: 30px; /* Space between cards */
+    padding: 20px;
+    max-width: 1200px; /* Max width for the card container */
+    margin: 0 auto;
+
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+    
+   
+    flex: 1; 
+    max-width: 300px;
+    padding: 20px;
+    background-color: #ffffff; /* Assuming white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+   color: #cc0000; 
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+.feature-icon {
+    width: 100px; /* Adjust the size of the icon */
+    height: 100px;
+    object-fit: contain; /* Ensures the icon is not cropped or distorted */
+    margin-bottom: 10px; /* Space between the icon and the title (h3) */
+}

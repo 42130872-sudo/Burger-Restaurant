@@ -1,0 +1,433 @@
+/* AddToCart.css */
+
+/* --- Variables and Base Styles --- */
+:root {
+    --primary-red: #dc2626; /* Deep Red */
+    --dark-red: #b91c1c; 
+    --light-gray-bg: #f9fafb; /* Light Background */
+    --dark-text: #1f2937;
+    --medium-text: #4b5563;
+    --border-color: #e5e7eb;
+}
+
+.add-to-cart-page {
+    min-height: 100vh;
+    background-color: var(--light-gray-bg);
+    padding: 16px 8px; 
+    font-family: 'Inter', sans-serif;
+}
+
+/* --- Header --- */
+.page-header {
+    text-align: center;
+    margin-bottom: 40px; 
+}
+
+.header-title {
+    font-size: 3rem; 
+    font-weight: 800; 
+    color: var(--dark-red);
+    font-style: italic;
+}
+
+.header-subtitle {
+    font-size: 1.125rem; 
+    color: var(--medium-text);
+    margin-top: 8px; 
+}
+
+/* --- Section Layout --- */
+.burger-selection-section,
+.cart-summary-section,
+.submitted-orders-section { /* Added submitted orders */
+    max-width: 900px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px; 
+}
+
+.section-heading {
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color: var(--dark-text);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px; 
+    margin-bottom: 16px; 
+    text-align: left;
+}
+
+/* --- Burger Item Cards (Unchanged) --- */
+.burger-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+}
+
+.burger-item-card {
+    background-color: #fff;
+    padding: 16px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.burger-item-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.item-details {
+    text-align: center;
+    margin-bottom: 16px; 
+}
+
+.item-name {
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    color: var(--dark-text);
+}
+
+.item-price {
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color: var(--primary-red);
+}
+
+.item-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px; 
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d1d5db; 
+    border-radius: 8px; 
+    overflow: hidden;
+}
+
+.quantity-controls button {
+    padding: 8px 12px; 
+    background-color: #e5e7eb; 
+    color: #4b5563; 
+    font-size: 1.25rem; 
+    font-weight: 700;
+    transition: background-color 0.15s;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity-controls button:hover:not(:disabled) {
+    background-color: #d1d5db; 
+}
+
+.quantity-controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.quantity-display {
+    width: 40px; 
+    text-align: center;
+    font-size: 1.125rem; 
+    font-weight: 500; 
+    background-color: white;
+}
+
+.add-to-cart-btn {
+    padding: 8px 24px; 
+    background-color: var(--primary-red);
+    color: white;
+    font-weight: 600; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover:not(:disabled) {
+    background-color: var(--dark-red); 
+}
+
+.add-to-cart-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+/* --- Cart Summary Table (Updated for 5 Columns) --- */
+.cart-summary-section {
+    background-color: #fff;
+    padding: 24px; 
+    border-radius: 12px; 
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+    border-top: 4px solid var(--primary-red); 
+}
+
+.cart-summary-section .section-heading {
+    font-size: 1.875rem; 
+    font-weight: 700;
+    margin-bottom: 24px; 
+    border-bottom: none;
+}
+
+.empty-cart-message {
+    font-size: 1.125rem; 
+    color: #9ca3af; 
+    padding: 16px 0; 
+    text-align: center;
+}
+
+.cart-table-container {
+    overflow-x: auto;
+}
+
+.cart-table {
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+.cart-table thead {
+    background-color: #f9fafb; 
+}
+
+/* Specific alignment for headers */
+.cart-table th {
+    padding: 12px 24px; 
+    font-size: 0.75rem; 
+    font-weight: 500; 
+    color: #6b7280; 
+    text-transform: uppercase;
+    letter-spacing: 0.05em; 
+    border-bottom: 1px solid var(--border-color);
+    text-align: right; /* Default align right for all */
+}
+
+.cart-table th:nth-child(1) { /* Burger Name */
+    text-align: left;
+}
+.cart-table th:nth-child(5) { /* Action */
+    text-align: center;
+}
+
+
+/* Specific alignment for data cells */
+.cart-table td {
+    padding: 16px 24px; 
+    font-size: 0.875rem; 
+    color: #374151; 
+    border-bottom: 1px solid var(--border-color);
+    text-align: right; /* Default align right for all */
+    vertical-align: middle;
+}
+
+.cart-table td:nth-child(1) { /* Burger Name */
+    text-align: left;
+    font-weight: 500; 
+    color: #111827; 
+}
+.cart-table td:nth-child(5) { /* Action */
+    text-align: center;
+}
+
+.cart-item-row:hover {
+    background-color: #fef2f2; 
+}
+
+
+
+.item-quantity-cell {
+    font-weight: 600; 
+}
+
+.item-total-cell {
+    font-weight: 700; 
+    color: var(--primary-red);
+    font-size: 1rem;
+}
+
+/* Grand Total Row */
+.grand-total-row {
+    background-color: #fef2f2; 
+    font-weight: 700; 
+    border-top: 2px solid var(--primary-red); 
+}
+
+.grand-total-label {
+    padding: 16px 24px;
+    font-size: 1.125rem; 
+    color: var(--dark-text);
+    text-align: left; 
+}
+
+.grand-total-amount {
+    padding: 16px 24px;
+    font-size: 1.25rem; 
+    color: #991b1b; 
+    text-align: right; 
+}
+
+/* --- NEW: Remove Button --- */
+.remove-item-btn {
+    padding: 4px 8px;
+    background-color: #fca5a5; /* Light red */
+    color: var(--primary-red);
+    font-weight: 600;
+    border: 1px solid var(--primary-red);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    font-size: 0.8rem;
+    line-height: 1.5; /* Ensure button text is vertically centered */
+}
+
+.remove-item-btn:hover {
+    background-color: var(--primary-red);
+    color: white;
+}
+
+
+/* --- NEW: Submit Order Button --- */
+.submit-order-btn-container {
+    padding-top: 20px;
+    text-align: right;
+}
+
+.submit-order-btn {
+    padding: 12px 30px;
+    background-color: #10b981; /* Green color for submission */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(16, 185, 129, 0.4);
+    transition: background-color 0.2s;
+}
+
+.submit-order-btn:hover {
+    background-color: #059669;
+}
+
+
+/* --- NEW: Submitted Orders List --- */
+.submitted-orders-section {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.order-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.order-item {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f7f7f7;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #d1d5db; /* Lighter border for separation */
+    padding-bottom: 5px;
+    color: var(--dark-text);
+}
+
+.order-total {
+    margin-top: 10px;
+    font-weight: 700;
+    color: var(--dark-red);
+    text-align: right;
+    font-size: 1.1rem;
+}
+
+.order-details-list {
+    list-style-type: '🍔 '; /* Custom marker */
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.order-details-list li {
+    margin-bottom: 3px;
+    font-size: 0.9rem;
+    color: var(--medium-text);
+}
+
+
+/* Responsive adjustments */
+@media (min-width: 640px) { 
+    .burger-item-card {
+        flex-direction: row;
+    }
+    .item-details {
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
+/* --- NEW: Burger Item Image Styling --- */
+.burger-item-image {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    border-radius: 8px; /* Slightly rounded corners */
+    margin-right: 15px; /* Space between image and text details */
+    flex-shrink: 0; /* Prevent image from shrinking if content pushes it */
+}
+
+/* Adjustments for the burger item card layout to accommodate the image */
+.burger-item-card {
+    /* Existing styles... */
+    display: flex; /* Make it a flex container */
+    align-items: center; /* Vertically align items */
+    justify-content: flex-start; /* Align content to the start */
+    gap: 15px; /* Space between image and details */
+}
+
+/* Adjust item-details if needed */
+.burger-item-card .item-details {
+    text-align: left; /* Ensure text details align left */
+    flex-grow: 1; /* Allow details to take up available space */
+    margin-bottom: 0; /* Remove previous margin if present */
+}
+
+/* Adjust item-controls position */
+.burger-item-card .item-controls {
+    margin-left: auto; /* Push controls to the right */
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 640px) { 
+    .burger-item-card {
+        flex-direction: column; /* Stack image, details, and controls */
+        align-items: center; /* Center them */
+        text-align: center;
+    }
+    .burger-item-image {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 15px; /* Add bottom margin when stacked */
+    }
+    .burger-item-card .item-details {
+        text-align: center; /* Center text details */
+    }
+    .burger-item-card .item-controls {
+        margin-left: 0; /* Remove auto-margin */
+        margin-top: 15px; /* Add space when stacked */
+    }
+}
