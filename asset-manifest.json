@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Burger-Restaurant/static/css/main.a6b33cfe.css",
+    "main.css": "/Burger-Restaurant/static/css/main.dbb5917b.css",
     "main.js": "/Burger-Restaurant/static/js/main.1b8481ec.js",
     "static/js/453.f4bc5f6a.chunk.js": "/Burger-Restaurant/static/js/453.f4bc5f6a.chunk.js",
     "static/media/BlueCheese.jpg": "/Burger-Restaurant/static/media/BlueCheese.0c12a714a17750cd8480.jpg",
@@ -32,12 +32,12 @@
     "static/media/chef_raiyan.jpg": "/Burger-Restaurant/static/media/chef_raiyan.7b999507ed0f0975132f.jpg",
     "static/media/FreshLemon.avif": "/Burger-Restaurant/static/media/FreshLemon.356b8f3a6e75e6e3b86a.avif",
     "index.html": "/Burger-Restaurant/index.html",
-    "main.a6b33cfe.css.map": "/Burger-Restaurant/static/css/main.a6b33cfe.css.map",
+    "main.dbb5917b.css.map": "/Burger-Restaurant/static/css/main.dbb5917b.css.map",
     "main.1b8481ec.js.map": "/Burger-Restaurant/static/js/main.1b8481ec.js.map",
     "453.f4bc5f6a.chunk.js.map": "/Burger-Restaurant/static/js/453.f4bc5f6a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6b33cfe.css",
+    "static/css/main.dbb5917b.css",
     "static/js/main.1b8481ec.js"
   ]
 }
